@@ -1,0 +1,415 @@
+* {
+    padding: 0;    
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url(fonts/quicksand.bold-regular.otf);
+}
+
+body {
+    max-width: 1024px;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navBar, .textBar, .leftBlock,
+.rightBlock, .imageBar, .menu, .arrowBlock {
+    display: flex;
+    margin: 0;
+}
+
+/*-------------Header selectors------------*/
+
+/*----------navBar-------------*/
+
+.navBar {
+    height: 97px;
+    background-color: rgb(55, 60, 63);
+}
+
+.navButton {
+    display: none;
+}
+
+.navigation {
+    display: none;
+}
+
+.menu {
+    list-style-type: none;
+    color: rgb(235, 235, 235);
+    align-items: center;
+    margin-left: 54px;
+    font-size: 16px;    
+}
+
+.menu li {
+    margin-right: 28px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+/*----------bannerBlock-------------*/
+
+/*stretchy wrappers to keep the element's
+ aspect ratio when resizing*/
+
+.stretchyWrapper_bannerBlock{
+    width: 100%;
+    padding-bottom: 56.25%; /*aspect ratio*/
+    position: relative;
+}
+
+.bannerBlock {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(to bottom right,
+    rgb(40, 185, 202),
+    rgb(14, 141, 166));
+}
+
+.stretchyWrapper_text {
+    width: 100%;
+    padding-bottom: 22.168%;
+    position: relative;
+    top: 32.64%;
+    
+}
+
+.text {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin-left: 8%;
+}
+
+.firstLine, .secondLine {
+    color: white;
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.secondLine {
+    padding-left: 2px;
+    position: relative;
+    bottom: 5.73%;
+}
+
+.thirdLine {
+    position: relative;
+    top: 10.1321%;
+}
+
+.link {
+    display: inline-block;
+    color: rgb(166, 211, 221);
+    font-weight: 500;
+    font-size: 37.7px;
+}
+
+.arrow {
+    display: inline-block;
+    color: white;
+    font-family: "Quicksand";
+    font-size: 40px;
+    position: relative;
+    left: 33.7%;
+}
+
+/*-------------Main selectors------------*/
+
+/*----------texBar-------------*/
+
+.stretchyWrapper_textBar {
+    width: 100%;
+    padding-bottom: 23.93%; 
+    position: relative;
+}
+
+.textBar {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.leftBlock {
+    width: 796px;
+    background:linear-gradient(rgb(68, 58, 77) 1px,
+    rgb(49, 41, 55) 2px, rgb(39, 33, 44) 3px);
+    align-items: center;
+}
+
+.leftBlock span {
+    font-weight: 500;
+    font-size: 32px;
+    color: rgb(154, 137, 168);
+    margin-left: 10.7%;
+    letter-spacing: -0.52px;
+}
+
+.rightBlock {
+    width: 228px;
+    background:linear-gradient(rgb(238, 86, 224) 1px,
+    rgb(205, 61, 162) 2px, rgb(188, 49, 162) 3px);
+    left: 796px;
+    align-items: center;
+}
+
+.rightBlock span {
+    font-family: "Quicksand";
+    color: white;
+    margin-left: 40%;
+    font-size: 57px;
+}
+
+/*----------imageBar-------------*/
+
+.stretchyWrapper_imageBar{
+    width: 100%;
+    padding-bottom: 28.8%;
+    position: relative;
+}
+
+.imageBar {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.image1Wrap {
+    width: 341px;
+    background-image: url(img/bridge.jpg);
+    background-size: 100% 100%;
+}
+
+.image2Wrap {
+    width: 342px;
+    background-image: url(img/woman.jpg);
+    background-size: 100% 100%;
+}
+
+.arrowBlock {
+    width: 341px;
+    background-color: rgb(91, 15, 161);
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowBlock span {
+    color: white;
+    font-size: 46px;
+    font-family: "Quicksand";
+}
+
+
+/*-------------Footer selectors------------*/
+
+.stretchyWrapper_textBlock{
+    width: 100%;
+    padding-bottom: 54.88%;
+    position: relative;
+}
+
+.textBlock {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    background-color: rgb(235, 235, 235);
+}
+
+.textBlock .footerLink {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 7.4%;
+    color: rgb(8, 140, 165);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    text-shadow: 0px 1px rgb(8, 140, 165);
+}
+
+.pBox_small {
+    display: none;
+}
+
+.pBox {
+    margin-top: 2%;
+    margin-left: 7.4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pBox p {
+    text-shadow: 0px 1px rgb(245, 245, 245);
+    font-size: 14.5px;
+    color: rgb(81, 81, 81);
+    width: 45%;
+    line-height: 1.8;
+    margin: 0 5% 2.8% 0;
+}
+
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px){
+     .firstLine, .secondLine {
+         font-size: 6.25vw;
+     } 
+     
+     .arrow {
+         font-size: 3.9vw;
+     }
+
+     .link {
+         font-size: 3.6816vw;
+     }
+
+     .leftBlock span {
+         font-size: 3.125vw;
+     }
+
+     .rightBlock span {
+         font-size: 5.5664vw;
+     }
+
+     .arrowBlock span {
+         font-size: 4.4922vw;
+     }
+}
+
+@media only screen and (max-width: 980px), only screen and (max-device-width: 980px){
+    .pBox p {
+        width: 44.1582%;
+    }
+
+    .textBlock .footerLink {
+        font-size: 3vw;
+    }
+
+    .pBox p {
+        font-size: 1.48vw;
+    }
+}
+
+@media only screen and (max-width: 708px), only screen and (max-device-width: 708px){
+    .menu {
+        margin-left: 4.38vw;
+    }
+}
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px){
+    .stretchyWrapper_navBar {
+        width: 100%;
+        padding-bottom: 11.88%;
+        position: relative;
+    }
+
+    .navBar {
+        position: absolute;
+        top: 0; left: 0; top: 0; bottom: 0; 
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        font-size: 3.864vw;
+        color: rgb(235, 235, 235);
+        margin-left: 5.62%;
+        font-weight: 500;
+    }
+
+    .navButton {
+        display: block;
+        height: 100%;
+        width: 13%;
+        background-color: rgb(32, 37, 41);
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tripleBar {
+        height: 27%;
+        width: 37%;
+    }
+
+    .tripleBar div {
+        height: 20%;
+        width: 100%;
+        background-color: white; 
+    }
+
+    .bar_2 {
+        position: relative;
+        top: 40%;
+    }
+
+    .bar_1 {
+        position: relative;
+        top: 20%;
+    }
+
+    .stretchyWrapper_imageBar {
+        padding-bottom: 266.4526%;
+    }
+
+    .imageBar {
+        flex-direction: column;
+    }
+
+    .image1Wrap, .image2Wrap, .arrowBlock {
+        width: 100%;
+        height: calc(1660px / 3);
+    }
+
+    .arrowBlock span {
+        font-size: 12.9545vw;
+    }
+
+    .pBox {
+        display: none;
+    }
+
+    .stretchyWrapper_textBlock {
+        padding-bottom: 143.3387%;
+    }
+
+    .textBlock .footerLink {
+        font-size: 4.7727vw;
+        margin: 0;
+        position: absolute;
+        top: 7.5%;
+        left: 12.0385%;
+    }
+
+    .pBox_small {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 13.9977%;
+        left: 11.7174%;
+    }
+
+    .pBox_small p {
+        text-shadow: 0px 1px rgb(245, 245, 245);
+        color: rgb(81, 81, 81);
+        font-size: 3.5938vw;
+        line-height: 1.8895;
+    }
+}
+
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
+    .stretchyWrapper_textBlock {
+        padding-bottom: 180.8647%;
+    }
+
+    .pBox_small p {
+        font-size: 4.54545vw;
+        line-height: 1.5;
+        margin-right: 9%;
+    }
+}
